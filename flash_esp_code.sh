@@ -48,7 +48,7 @@ if [ $toClear = 1 ]
 		clear
 fi
 
-#upload
+upload
 
 if [ $toEnterRepl = 1 ]
 	then
