@@ -34,21 +34,23 @@ toClear=0
 toEnterRepl=0
 while [ -n "$2" ]; do
 	case "$2" in
-	--clear) toClear=1;;
-	--repl) toEnterRepl=1;;
+	--clear) toClear=1
+			echo "clear set";;
+	--repl) toEnterRepl=1
+			echo "repl set";;
 	*) echo "Option $2 not recognized";;
 	esac
 	shift
 done
 
-if [[ toClear = 1 ]]
-	 then
+if [ $toClear = 1 ]
+	then
 		clear
 fi
 
-upload
+#upload
 
-if [[ toEnterRepl = 1 ]]
+if [ $toEnterRepl = 1 ]
 	then
 		enterRepl
 fi
