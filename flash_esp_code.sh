@@ -34,10 +34,8 @@ toClear=0
 toEnterRepl=0
 while [ -n "$2" ]; do
 	case "$2" in
-	--clear) toClear=1
-			echo "clear set";;
-	--repl) toEnterRepl=1
-			echo "repl set";;
+	--clear) toClear=1;;
+	--repl) toEnterRepl=1;;
 	*) echo "Option $2 not recognized";;
 	esac
 	shift
