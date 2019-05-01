@@ -1,0 +1,3 @@
+awesome_assets
+coolcode.py
+somefile.py
